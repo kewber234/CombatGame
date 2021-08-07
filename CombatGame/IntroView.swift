@@ -16,13 +16,12 @@ struct IntroView: View {
         VStack{
             Text(intro[introIndex]).font(.custom("HiraKakuProN-W6", size: 20)).foregroundColor(.gray2).onTapGesture {
                 self.introIndex += self.introIndex != self.intro.count-1 ? 1 :0
-            }
+            }.padding(.horizontal)
             if introIndex == intro.count-1{
                 VStack{
                     Button("OPEN TABLET"){
                         self.showing = false
-                        
-                    }
+                    }.offset(x: 0, y: 30)
                 }
                 
             }

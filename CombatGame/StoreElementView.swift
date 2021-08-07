@@ -30,13 +30,16 @@ struct StoreElementView: View {
                     }
                     
                 }.blur(radius: self.showingDescription ? 10 : 0).opacity(self.showingDescription ? 0.5 : 1)
-                Image(systemName: "info.circle.fill").font(.system(size: 25)).foregroundColor(.gray2).position(x: 20, y: geo.size.width-7).onTapGesture {
-                    self.showingDescription.toggle()
+                HStack{
+                    Image(systemName: "info.circle.fill").font(.system(size: 25)).foregroundColor(.gray2).offset(x: geo.size.width*0.02, y: geo.size.width*0.4).onTapGesture {
+                        self.showingDescription.toggle()
+                    }
+                    Spacer()
                 }
                 if self.showingDescription{
                     Text(self.text).font(.system(size: geo.size.height*0.085)).padding().foregroundColor(.black)
                 }
-            }
+            }.position(x: geo.size.width/2, y:geo.size.height/2).edgesIgnoringSafeArea(.all)
         }
     }
     //func getSize()->CGFloat{

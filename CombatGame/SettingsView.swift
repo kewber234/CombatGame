@@ -92,11 +92,11 @@ struct SettingsView: View {
                     Image("Temple").resizable().edgesIgnoringSafeArea(.all).opacity(0.4)
                     Text("SETTINGS").fontWeight(.black).font(.custom("Zapfino", size: geo.size.width*0.09)).position(x: geo.size.width/2, y: -geo.size.height*0.05)
                     Toggle(isOn: self.$musicOn){
-                        Text("Sound FX").bold()
-                    }.padding(.horizontal,geo.size.width*0.32).scaleEffect(1.6).position(x: geo.size.width/2, y: geo.size.height*0.4)
+                        Text("Sound FX").bold().font(.system(size: geo.size.height*0.05))
+                    }.padding(.horizontal,geo.size.width*0.25).position(x: geo.size.width/2, y: geo.size.height*0.4)
                     Toggle(isOn: self.$musicOn){
-                        Text("Music").bold()
-                    }.padding(.horizontal,geo.size.width*0.36).scaleEffect(1.6).position(x: geo.size.width*0.55, y: geo.size.height*0.26)
+                        Text("Music").bold().font(.system(size: geo.size.height*0.05))
+                    }.padding(.horizontal,geo.size.width*0.3).position(x: geo.size.width*0.55, y: geo.size.height*0.26)
                     ZStack{
                         Rectangle().frame(width:geo.size.width*0.85,height:geo.size.height*0.08).foregroundColor(.gray2).cornerRadius(5)
                         HStack(spacing:20){

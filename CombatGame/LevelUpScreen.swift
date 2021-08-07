@@ -30,7 +30,7 @@ struct LevelUpScreen: View {
                     }
                 }
                 
-            }.offset(x:-30).onAppear{
+            }.onAppear{
                 self.mainCurrencies.gems += self.gemIncrement
                 self.mainCurrencies.energy = self.maxEnergy
             }

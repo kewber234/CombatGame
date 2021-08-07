@@ -12,11 +12,9 @@
 		821AA891247891BA009D52E6 /* EndlessDeathScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AA890247891BA009D52E6 /* EndlessDeathScreen.swift */; };
 		82268E2B246A1DF600A49E6C /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82268E2A246A1DF600A49E6C /* SoundFile.swift */; };
 		82268E2D246A534300A49E6C /* RewardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82268E2C246A534300A49E6C /* RewardScreen.swift */; };
-		8236490D2463B164003844F6 /* Battle Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8236490C2463B164003844F6 /* Battle Music.mp3 */; };
 		8236490F24646202003844F6 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236490E24646202003844F6 /* CurrencyView.swift */; };
 		8236491124675904003844F6 /* mainStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236491024675904003844F6 /* mainStatsView.swift */; };
 		82369D06245B614D000FCAA4 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82369D05245B614D000FCAA4 /* extensions.swift */; };
-		82369D0A245B6F12000FCAA4 /* Master Kenny's Dojo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82369D09245B6F12000FCAA4 /* Master Kenny's Dojo.mp3 */; };
 		824CE024247064760097D54C /* XPBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824CE023247064760097D54C /* XPBarView.swift */; };
 		825325942446698E00C48128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825325932446698E00C48128 /* AppDelegate.swift */; };
 		825325962446698E00C48128 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825325952446698E00C48128 /* SceneDelegate.swift */; };
@@ -45,7 +43,6 @@
 		82A945F62482017F00FD3A38 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A945F52482017F00FD3A38 /* TutorialView.swift */; };
 		82A945F82484A34400FD3A38 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82A945F72484A34400FD3A38 /* coin.mp3 */; };
 		82A945FA2484A34A00FD3A38 /* regen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82A945F92484A34A00FD3A38 /* regen.wav */; };
-		82A945FC2484A43600FD3A38 /* gong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82A945FB2484A43600FD3A38 /* gong.wav */; };
 		82AE3465245F135E00641E97 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82AE3464245F135E00641E97 /* click.mp3 */; };
 		82AE3467245F136400641E97 /* realclick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82AE3466245F136400641E97 /* realclick.mp3 */; };
 		82AE3469245F1F1800641E97 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE3468245F1F1800641E97 /* LoadView.swift */; };
@@ -53,6 +50,9 @@
 		82C286F3246B4088003E87B6 /* TreasuryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C286F2246B4088003E87B6 /* TreasuryView.swift */; };
 		82C3848F2485E268000E4339 /* extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3848E2485E268000E4339 /* extras.swift */; };
 		82D2B6BA245928A8001EFFA9 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D2B6B9245928A8001EFFA9 /* IntroView.swift */; };
+		82D3A8B326BD059400308D21 /* gong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82D3A8B226BD059400308D21 /* gong.wav */; };
+		82D3A8B626BD05A500308D21 /* Battle Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82D3A8B526BD05A500308D21 /* Battle Music.mp3 */; };
+		82D3A8B926BD05AA00308D21 /* Master Kenny's Dojo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82D3A8B826BD05AA00308D21 /* Master Kenny's Dojo.mp3 */; };
 		82E4DE1B247A231500D27116 /* UpgradeShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E4DE1A247A231500D27116 /* UpgradeShopView.swift */; };
 		82E4DE1D247A233400D27116 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E4DE1C247A233400D27116 /* SettingsView.swift */; };
 		82E4DE1F247AE14200D27116 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E4DE1E247AE14200D27116 /* MenuView.swift */; };
@@ -66,11 +66,9 @@
 		821AA890247891BA009D52E6 /* EndlessDeathScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessDeathScreen.swift; sourceTree = "<group>"; };
 		82268E2A246A1DF600A49E6C /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
 		82268E2C246A534300A49E6C /* RewardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardScreen.swift; sourceTree = "<group>"; };
-		8236490C2463B164003844F6 /* Battle Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Battle Music.mp3"; path = "../../../Desktop/Battle Music.mp3"; sourceTree = "<group>"; };
 		8236490E24646202003844F6 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		8236491024675904003844F6 /* mainStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainStatsView.swift; sourceTree = "<group>"; };
 		82369D05245B614D000FCAA4 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
-		82369D09245B6F12000FCAA4 /* Master Kenny's Dojo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Master Kenny's Dojo.mp3"; path = "../../../Desktop/Master Kenny's Dojo.mp3"; sourceTree = "<group>"; };
 		824CE023247064760097D54C /* XPBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPBarView.swift; sourceTree = "<group>"; };
 		825325902446698E00C48128 /* CombatGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombatGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		825325932446698E00C48128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		82A945F52482017F00FD3A38 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		82A945F72484A34400FD3A38 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = coin.mp3; path = ../../../Desktop/coin.mp3; sourceTree = "<group>"; };
 		82A945F92484A34A00FD3A38 /* regen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = regen.wav; path = ../../../Desktop/regen.wav; sourceTree = "<group>"; };
-		82A945FB2484A43600FD3A38 /* gong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = gong.wav; path = ../../../Desktop/gong.wav; sourceTree = "<group>"; };
 		82AE3464245F135E00641E97 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = ../../../Desktop/click.mp3; sourceTree = "<group>"; };
 		82AE3466245F136400641E97 /* realclick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = realclick.mp3; path = ../../../Desktop/realclick.mp3; sourceTree = "<group>"; };
 		82AE3468245F1F1800641E97 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
@@ -109,6 +106,9 @@
 		82C286F2246B4088003E87B6 /* TreasuryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasuryView.swift; sourceTree = "<group>"; };
 		82C3848E2485E268000E4339 /* extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extras.swift; sourceTree = "<group>"; };
 		82D2B6B9245928A8001EFFA9 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		82D3A8B226BD059400308D21 /* gong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = gong.wav; path = ../../../../Desktop/gong.wav; sourceTree = "<group>"; };
+		82D3A8B526BD05A500308D21 /* Battle Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Battle Music.mp3"; path = "../../../../Desktop/Battle Music.mp3"; sourceTree = "<group>"; };
+		82D3A8B826BD05AA00308D21 /* Master Kenny's Dojo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Master Kenny's Dojo.mp3"; path = "../../../../Desktop/Master Kenny's Dojo.mp3"; sourceTree = "<group>"; };
 		82E4DE1A247A231500D27116 /* UpgradeShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeShopView.swift; sourceTree = "<group>"; };
 		82E4DE1C247A233400D27116 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		82E4DE1E247AE14200D27116 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -184,13 +184,13 @@
 				82C286F2246B4088003E87B6 /* TreasuryView.swift */,
 				825325992446699100C48128 /* Assets.xcassets */,
 				8253259E2446699100C48128 /* LaunchScreen.storyboard */,
-				82369D09245B6F12000FCAA4 /* Master Kenny's Dojo.mp3 */,
-				8236490C2463B164003844F6 /* Battle Music.mp3 */,
 				82AE3464245F135E00641E97 /* click.mp3 */,
 				82AE3466245F136400641E97 /* realclick.mp3 */,
 				82A945F92484A34A00FD3A38 /* regen.wav */,
 				82A945F72484A34400FD3A38 /* coin.mp3 */,
-				82A945FB2484A43600FD3A38 /* gong.wav */,
+				82D3A8B226BD059400308D21 /* gong.wav */,
+				82D3A8B826BD05AA00308D21 /* Master Kenny's Dojo.mp3 */,
+				82D3A8B526BD05A500308D21 /* Battle Music.mp3 */,
 				825325A12446699100C48128 /* Info.plist */,
 				82369D05245B614D000FCAA4 /* extensions.swift */,
 				82268E2A246A1DF600A49E6C /* SoundFile.swift */,
@@ -276,16 +276,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82369D0A245B6F12000FCAA4 /* Master Kenny's Dojo.mp3 in Resources */,
 				82A945FA2484A34A00FD3A38 /* regen.wav in Resources */,
 				82AE3465245F135E00641E97 /* click.mp3 in Resources */,
-				8236490D2463B164003844F6 /* Battle Music.mp3 in Resources */,
 				825325A02446699100C48128 /* LaunchScreen.storyboard in Resources */,
-				82A945FC2484A43600FD3A38 /* gong.wav in Resources */,
 				82AE3467245F136400641E97 /* realclick.mp3 in Resources */,
 				8253259D2446699100C48128 /* Preview Assets.xcassets in Resources */,
 				8253259A2446699100C48128 /* Assets.xcassets in Resources */,
 				82A945F82484A34400FD3A38 /* coin.mp3 in Resources */,
+				82D3A8B626BD05A500308D21 /* Battle Music.mp3 in Resources */,
+				82D3A8B926BD05AA00308D21 /* Master Kenny's Dojo.mp3 in Resources */,
+				82D3A8B326BD059400308D21 /* gong.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

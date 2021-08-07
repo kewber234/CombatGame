@@ -16,10 +16,10 @@ struct HealthBarView: View {
         GeometryReader{ geo in
             
             ZStack{
-                RoundedRectangle(cornerRadius: 30).frame(width:geo.size.width*0.92,height:35).foregroundColor(.white).overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.black, lineWidth: 2))
-                RoundedRectangle(cornerRadius: 30).frame(width:geo.size.width*0.92*self.getL(),height:35).foregroundColor(.red).position(x: ((geo.size.width*self.getL()*0.92)/(2))+(0.04*geo.size.width), y: geo.size.height/2)
+                RoundedRectangle(cornerRadius: 30).frame(width:geo.size.width*0.92,height:geo.size.height*0.07).foregroundColor(.white).overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.black, lineWidth: 2))
+                RoundedRectangle(cornerRadius: 30).frame(width:geo.size.width*0.92*self.getL(),height:geo.size.height*0.07).foregroundColor(.red).position(x: ((geo.size.width*self.getL()*0.92)/(2))+(0.04*geo.size.width), y: geo.size.height/2)
                     .animation(.default)
-                Text("\(self.name)").font(.custom("HiraKakuProN-W6", size: 30)).position(x: geo.size.width*self.getNameMove(),y: geo.size.height*0.45)
+                Text("\(self.name)").font(.custom("HiraKakuProN-W6", size: 30)).position(x: geo.size.width*self.getNameMove(),y: geo.size.height*0.44)
                 Text("\(self.health)").bold().position(x: geo.size.width*0.85,y: geo.size.height*0.5)
             }
         }
@@ -27,7 +27,7 @@ struct HealthBarView: View {
     }
     func getNameMove()->CGFloat{
         let length = CGFloat(self.name.count)
-        return 0.9 - (length*0.017)
+        return 0.85 - (length*0.017)
     }
     func getL()->CGFloat{
         let r = CGFloat(health)/CGFloat(originalHealth)

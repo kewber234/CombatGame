@@ -63,23 +63,25 @@ struct CurrenciesTutorial: View{
 struct TutorialView: View {
     let g = LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottom)
     var body: some View {
+        GeometryReader{geo in
         NavigationView{
-            ZStack{
-                Image("Temple").resizable().edgesIgnoringSafeArea(.all).opacity(0.4)
-                VStack{
-                    NavigationLink(destination: StatsTutorial()) {
-                        Text("Attributes").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottom))
-                    }
-                    NavigationLink(destination: FightingTutorial()) {
-                        Text("Combat").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.orange2,.orange2,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottom))
-                    }
-                    NavigationLink(destination: GameModesTutorial()) {
-                        Text("Game Modes").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                    }
-                    NavigationLink(destination: CurrenciesTutorial()) {
-                        Text("Currencies").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2]), startPoint: .topLeading, endPoint: .bottom))
-                    }
-                }.offset(y:-60)
+                ZStack{
+                    Image("Temple").resizable().edgesIgnoringSafeArea(.all).opacity(0.4)
+                    VStack{
+                        NavigationLink(destination: StatsTutorial()) {
+                            Text("Attributes").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottom))
+                        }
+                        NavigationLink(destination: FightingTutorial()) {
+                            Text("Combat").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.orange2,.orange2,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottom))
+                        }
+                        NavigationLink(destination: GameModesTutorial()) {
+                            Text("Game Modes").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2,.pinkMaroon]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                        }
+                        NavigationLink(destination: CurrenciesTutorial()) {
+                            Text("Currencies").bold().foregroundColor(.white).font(.system(size: 40)).frame(maxWidth:.infinity).frame(height:100).background(LinearGradient(gradient: Gradient(colors: [.pinkMaroon,.orange2]), startPoint: .topLeading, endPoint: .bottom))
+                        }
+                    }.offset(x: 0, y: -geo.size.height*0.04)
+                }
             }
         }
     }

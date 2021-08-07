@@ -34,7 +34,7 @@ struct ShowdownView: View {
                         Rectangle().frame(width:geo.size.width*0.6).foregroundColor(.greyWhite).opacity(0.8)
                         VStack(spacing:geo.size.height*0.005){
                 
-                                Text("\(self.oppName)").bold()
+                            Text("\(self.oppName)").bold().padding(.top,5)
                             
                                 HStack{
                                     Image("Heart").resizable().aspectRatio(contentMode: .fit).frame(width:40)
@@ -106,7 +106,7 @@ struct ShowdownView: View {
                 
                 
                 
-            }.background(LinearGradient(gradient: Gradient(colors: [.brown2,.greyWhite,.brown2]), startPoint: .topLeading, endPoint: .bottomTrailing)).edgesIgnoringSafeArea(.all)
+            }.background(LinearGradient(gradient: Gradient(colors: [.brown2,.greyWhite,.brown2]), startPoint: .topLeading, endPoint: .bottomTrailing)).edgesIgnoringSafeArea(.all).frame(width: geo.size.width, height: geo.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
     }
 }

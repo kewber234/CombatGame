@@ -78,7 +78,7 @@ struct EndlessDeathScreen: View {
                 }
             }
             
-        }.offset(x:-30).onAppear{
+        }.onAppear{
             withAnimation(Animation.linear(duration: 0.7)){
                 self.size += 0.7
             }

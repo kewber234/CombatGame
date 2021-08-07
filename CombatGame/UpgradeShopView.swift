@@ -103,7 +103,7 @@ struct UpgradeShopView: View {
                                             self.price = 5
                                             self.index = "heal"
                                         }) {
-                                            StoreElementView(name: "Healing Aura", image: "Aura", text: "A shroud of mystical energy heals you each turn. The more damaged you are, the more healing occurs.", level: self.mainAbilities.healingAuraLevel, color: .cyan,sideLength: 0.5,textSize: 23)
+                                            StoreElementView(name: "Healing Aura", image: "Aura", text: "A shroud of mystical energy heals you each turn. The more damaged you are, the more healing occurs.", level: self.mainAbilities.healingAuraLevel, color: .cyan,sideLength: 0.45,textSize: geo.size.height*0.035)
                                         }
                                         Button(action: {
                                             self.showingConfirmation = true
@@ -113,7 +113,7 @@ struct UpgradeShopView: View {
                                             self.price = 5
                                             self.index = "poison"
                                         }) {
-                                            StoreElementView(name: "Poison Dagger", image: "Dagger", text: "A deadly dagger capable of dealing damage every turn, ignoring enemy armour or blocks.", level: self.mainAbilities.poisonDaggerLevel, color: .cyan,sideLength: 0.5,textSize: 25)
+                                            StoreElementView(name: "Poison Dagger", image: "Dagger", text: "A deadly dagger capable of dealing damage every turn, ignoring enemy armour or blocks.", level: self.mainAbilities.poisonDaggerLevel, color: .cyan,sideLength: 0.5,textSize: geo.size.height*0.035)
                                         }
                                         
                                     }.padding(.horizontal,geo.size.height*0.02)
@@ -137,7 +137,7 @@ struct UpgradeShopView: View {
                                             }
                                             self.index = "pierce"
                                         }) {
-                                            StoreElementView(name: "Piercing Shot", image: "Bow", text: "Gives a chance at landing a piercing shot, completely ignoring your opponent's armour.", level: self.mainAbilities.piercingShotLevel, color: .cyan,sideLength: 0.5,textSize: 25)
+                                            StoreElementView(name: "Piercing Shot", image: "Bow", text: "Gives a chance at landing a piercing shot, completely ignoring your opponent's armour.", level: self.mainAbilities.piercingShotLevel, color: .cyan,sideLength: 0.45,textSize: geo.size.height*0.035)
                                         }
                                         Button(action: {
                                             self.showingConfirmation = true
@@ -158,7 +158,7 @@ struct UpgradeShopView: View {
                                             }
                                             self.index = "crit"
                                         }) {
-                                            StoreElementView(name: "Critical Strike", image: "Target2", text: "Gives a chance at landing a critical strike, dealing double damage to your opponent.", level: self.mainAbilities.criticalStrikeLevel, color: .cyan,sideLength: 0.5,textSize: 25)
+                                            StoreElementView(name: "Critical Strike", image: "Target2", text: "Gives a chance at landing a critical strike, dealing double damage to your opponent.", level: self.mainAbilities.criticalStrikeLevel, color: .cyan,sideLength: 0.5,textSize: geo.size.height*0.035)
                                         }
                                         
                                     }.padding(.horizontal,geo.size.height*0.02)
@@ -171,7 +171,7 @@ struct UpgradeShopView: View {
                                         self.price = 5
                                         self.index = "magnet"
                                     }) {
-                                        StoreElementView(name: "Coin Magnet", image: "Magnet", text: "A powerful magnet collects additional coins, ready for the taking at the end of every combat.", level: self.mainAbilities.coinMagnetLevel, color: .cyan,sideLength: 0.4,textSize: 25)
+                                        StoreElementView(name: "Coin Magnet", image: "Magnet", text: "A powerful magnet collects additional coins, ready for the taking at the end of every combat.", level: self.mainAbilities.coinMagnetLevel, color: .cyan,sideLength: 0.4,textSize: geo.size.height*0.035)
                                     }.padding(.horizontal,geo.size.height*0.17)
                                     
                                     

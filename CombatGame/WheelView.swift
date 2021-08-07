@@ -36,12 +36,12 @@ struct WheelView: View {
                 LinearGradient(gradient: Gradient(colors: [.maroon,.brown2,.pinkMaroon,.pinkMaroon,.brown2,.maroon]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
                 CurrencyView(image: "Ticket", number: self.tickets).position(x: geo.size.width*0.67, y: geo.size.height*0.52)
                 CurrencyView(image: "Coin", number: self.main.money).position(x: geo.size.width*1.1, y: geo.size.height*0.52)
-                mainStatsView(height: 100, width: geo.size.width, hth: self.main.health, atk: self.main.attack, acc: self.main.accuracy, arm: self.main.armour, blk: self.main.block, rgn: self.main.regens).position(x:geo.size.width/2,y:geo.size.height*0.75)
+                mainStatsView(size: geo.size.height*0.045,height: geo.size.height*0.2, width: geo.size.width, hth: self.main.health, atk: self.main.attack, acc: self.main.accuracy, arm: self.main.armour, blk: self.main.block, rgn: self.main.regens).position(x:geo.size.width/2,y:geo.size.height*0.73)
                 
                 Image("Test Wheel").resizable().frame(width:geo.size.width*0.85,height:geo.size.width*0.85)/*.rotationEffect(Angle(degrees: self.angle))*/
                     .rotationEffect(Angle(degrees: self.angle), anchor: .center)
                     .animation(Animation.default).shadow(color: .black, radius: 15, x: 0, y: 6)
-                    .position(x: geo.size.width/2, y: geo.size.height*0.39)
+                    .position(x: geo.size.width/2, y: geo.size.height*0.365)
                 
                 Button(action: {
                     self.buttonDisabled = true

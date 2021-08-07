@@ -24,7 +24,7 @@ struct LevelView: View {
                         ForEach(1..<13){
                             Text("\($0)").frame(width:20,height:20).background($0<=self.levelsPassed ? Color.brightYellow : Color.greyWhite.opacity(0.5)).clipShape(Circle()).overlay(Circle().stroke(Color.black, lineWidth: 2))
                             if $0 != 12{
-                                Rectangle().frame(width:10,height:5)
+                                Rectangle().frame(width:geo.size.height*0.01,height:geo.size.height*0.01)
                             }
                         }
                     }
